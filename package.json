@@ -1,6 +1,6 @@
 {
   "name": "@modyfi/vite-plugin-yaml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Import YAML files as JS objects 🔌",
   "type": "module",
   "author": {
@@ -16,18 +16,14 @@
   "exports": {
     ".": {
       "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
-    },
-    "./types": {
-      "require": "./dist/types.js",
-      "import": "./dist/types.mjs"
+      "import": "./dist/index.js"
     },
     "./modules": {
       "types": "./modules.d.ts"
     }
   },
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "index.d.ts",
   "files": [
     "dist",
