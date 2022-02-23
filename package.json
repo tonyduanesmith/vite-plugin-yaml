@@ -1,8 +1,14 @@
 {
-  "name": "vite-plugin-yaml",
-  "version": "0.1.0",
-  "description": "Import YAML files as JS objects",
+  "name": "@modyfi/vite-plugin-yaml",
+  "version": "1.0.0",
+  "description": "Import YAML files as JS objects 🔌",
   "type": "module",
+  "author": {
+    "name": "Tony Ketcham",
+    "email": "tony@modyfi.io",
+    "url": "https://github.com/tonyketcham"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "tsup --watch src",
     "build": "tsup"
@@ -16,8 +22,8 @@
       "require": "./dist/types.js",
       "import": "./dist/types.mjs"
     },
-    "./obj": {
-      "types": "./obj.d.ts"
+    "./modules": {
+      "types": "./modules.d.ts"
     }
   },
   "main": "dist/index.js",
