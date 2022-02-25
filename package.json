@@ -10,12 +10,17 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "tsup --watch src",
-    "build": "tsup"
+    "dev": "tsup --watch src",
+    "example:dev": "pnpm -C example run dev",
+    "example:build": "pnpm run build && npm -C example run build",
+    "build": "tsup",
+    "test": "vitest",
+    "test:watch": "vitest -w",
+    "coverage": "vitest run --coverage"
   },
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     },
     "./modules": {
@@ -33,8 +38,18 @@
   "keywords": [
     "vite",
     "vite-plugin",
-    "yaml"
+    "yaml",
+    "yml",
+    "modyfi"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Modyfi/vite-plugin-yaml"
+  },
+  "bugs": {
+    "url": "https://github.com/Modyfi/vite-plugin-yaml/issues"
+  },
+  "homepage": "https://github.com/Modyfi/vite-plugin-yaml/tree/main/#readme",
   "peerDependencies": {
     "vite": "^2.6.0"
   },
@@ -45,8 +60,10 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
+    "c8": "^7.11.0",
     "tsup": "^5.11.13",
     "typescript": "^4.5.5",
-    "vite": "2.7.10"
+    "vite": "2.7.10",
+    "vitest": "^0.5.5"
   }
 }

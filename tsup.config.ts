@@ -4,6 +4,6 @@ export default <Options>{
   splitting: true,
   clean: true,
   entryPoints: ['src/*.ts'],
-  format: ['esm'],
+  format: ['esm', 'cjs'],
   dts: true,
 };
