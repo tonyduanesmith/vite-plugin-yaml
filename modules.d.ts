@@ -1,8 +1,8 @@
 declare module '*.yaml' {
-  const value: string;
+  const value: Record<string, any>;
   export default value;
 }
 declare module '*.yml' {
-  const value: string;
+  const value: Record<string, any>;
   export default value;
 }
