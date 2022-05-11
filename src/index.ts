@@ -35,7 +35,7 @@ export type PluginOptions = {
   onWarning?: (warning: YAMLException) => void;
 };
 
-const yamlExtension = /\.yaml$/;
+const yamlExtension = /\.ya?ml$/;
 
 /**
  * Transform YAML files to JS objects.
