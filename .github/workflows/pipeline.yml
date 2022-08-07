@@ -1,7 +1,9 @@
 name: Pipeline
 
 on:
-  - push
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   integration-build:
@@ -19,7 +21,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.32.4
+          version: 7.9.0
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
@@ -49,7 +51,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.32.4
+          version: 7.9.0
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
