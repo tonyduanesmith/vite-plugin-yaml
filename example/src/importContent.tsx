@@ -15,7 +15,6 @@ export function importContent() {
     eager: true,
   });
 
-  console.log(contentModules);
   if (!contentModules) throw new Error('Could not find any content files');
 
   return Object.entries(contentModules).map(([path, module]) => {
