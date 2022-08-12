@@ -49,7 +49,7 @@
   },
   "homepage": "https://github.com/Modyfi/vite-plugin-yaml/tree/main/#readme",
   "peerDependencies": {
-    "vite": "^2.6.0"
+    "vite": "^2.6.0 || ^3.0.0"
   },
   "dependencies": {
     "@rollup/pluginutils": "4.2.1",
@@ -58,9 +58,9 @@
   },
   "devDependencies": {
     "@types/js-yaml": "4.0.5",
-    "c8": "7.11.3",
+    "c8": "7.12.0",
     "tsup": "5.12.8",
-    "typescript": "4.6.4",
-    "vite": "2.9.9"
+    "typescript": "4.7.4",
+    "vite": "3.0.4"
   }
 }

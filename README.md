@@ -33,7 +33,7 @@ export default {
 
 The recommended way to add type definitions for `.yaml` or `.yml` modules is via a `tsconfig.json` file.
 
-```json
+```ts
 // tsconfig.json
 {
   "compilerOptions": {
